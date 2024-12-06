@@ -42,3 +42,29 @@ npm run cy:open-local # open mode
 npm run cy:run-local  # run mode
 npm run cy:run-local-fast  # no video or screen shots
 ```
+
+## Test the package locally
+
+```bash
+npm pack
+# copy the tar file to the target repo root
+npm install cy-retryable-before-1.0.0.tgz
+```
+
+<!--
+Publish manually
+
+
+npm login
+# enter creds
+
+npm publish
+
+# Note: If your package name is scoped
+#(e.g., @yourusername/retryable-before), you might need to publish it as public:
+
+
+npm publish --access public
+
+
+ -->

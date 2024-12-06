@@ -2,10 +2,14 @@
   "name": "cy-retryable-before",
   "version": "1.0.0",
   "description": "A Cypress plugin that allows a `before()`-like hook to rerun before retried tests.",
-  "main": "dist/retryable-before.js",
-  "types": "dist/retryable-before.d.ts",
   "author": "Murat Ozcan",
   "license": "ISC",
+  "main": "dist/retryable-before.js",
+  "types": "dist/retryable-before.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig-build.json",
     "cy:open-local": "cypress open --e2e --browser chrome --config-file cypress/config/local.config.ts",
