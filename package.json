@@ -1,11 +1,13 @@
 {
-  "name": "node-template",
+  "name": "cy-retryable-before",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Cypress plugin that allows a `before()`-like hook to rerun before retried tests.",
+  "main": "dist/retryable-before.js",
+  "types": "dist/retryable-before.d.ts",
   "author": "Murat Ozcan",
   "license": "ISC",
   "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig-build.json",
     "cy:open-local": "cypress open --e2e --browser chrome --config-file cypress/config/local.config.ts",
     "cy:run-local": "cypress run --e2e --browser chrome --config-file cypress/config/local.config.ts",
     "mock:server": "npx mockoon-cli start --data ./mockoon/mock.json --port 3001",

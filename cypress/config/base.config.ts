@@ -3,9 +3,13 @@ import tasks from '../support/tasks'
 import esbuildPreprocessor from '../support/esbuild-preprocessor'
 
 export const baseConfig: Cypress.ConfigOptions = {
-  projectId: 'kdr2hm',
   viewportHeight: 1280,
   viewportWidth: 1280,
+
+  retries: {
+    runMode: 1,
+    openMode: 1
+  },
 
   e2e: {
     setupNodeEvents(on, config) {

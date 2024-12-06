@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 /**
  * A `before()` alternative that gets run when a failing test is retried.
  *

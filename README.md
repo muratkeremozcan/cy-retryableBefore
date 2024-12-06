@@ -1,20 +1,31 @@
-# Cy, Node template
+# cy-retryable-before
 
-A template with tooling, configuration and best practices for a Cy api e2e testing in a Node.js project.
+A `before` hook alternative for Cypress that gets run when a failing test is retried.
 
-## Setup
+By default cypress `before` hook isn't run when a test below it fails and is retried.
+Because we use before() as a place to setup state before running assertions inside it() this means we can't make use of cypress retry functionality to make our suites more reliable.
+
+`retryableBefore` is a workaround for this issue.
+
+```ts
+import { retryableBefore } from 'cy-retryable-before'
+
+describe('CRUD movie', () => {
+  retryableBefore(() => {
+    // ...
+  })
+
+  it('should', () => {
+    // ...
+  })
+})
+```
+
+## Setup for this repo
 
 ```bash
 npm i
 ```
-
-Use the sample `.env.example` file to create a `.env` file of your own. These values will also have to exist in your CI secrets.
-
-```bash
-SERVERPORT=3001
-```
-
-### Scripts
 
 ```bash
 npm run lint
