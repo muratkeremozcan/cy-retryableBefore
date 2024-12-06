@@ -21,6 +21,10 @@ describe('CRUD movie', () => {
 })
 ```
 
+## Demo
+
+See [demo video](https://www.youtube.com/watch?v=g1oSBZ7vQTI).
+
 ## Setup for this repo
 
 ```bash
@@ -51,20 +55,33 @@ npm pack
 npm install cy-retryable-before-1.0.0.tgz
 ```
 
-<!--
-Publish manually
+## Release
 
+```bash
+# Switch to main branch and update
 
-npm login
-# enter creds
+# Create an annotated tag
+git tag -a v1.0.0 -m "Release version 1.0.0"
 
-npm publish
+# Push the annotated tag to GitHub
+git push origin v1.0.10
+# Alternatively, push all tags
+git push --tags
+```
 
-# Note: If your package name is scoped
-#(e.g., @yourusername/retryable-before), you might need to publish it as public:
+## Publish (auto)
 
+Done automatically via github actions on tag push.
 
-npm publish --access public
-
-
- -->
+> Publish manually
+>
+> ```bash
+> npm login
+> # enter creds
+>
+> npm publish
+>
+> # Note: If your package name is scoped
+> #(e.g., @yourusername/retryable-before), you might need to publish it as public:
+> npm publish --access public
+> ```

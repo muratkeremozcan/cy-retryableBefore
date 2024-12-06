@@ -10,6 +10,20 @@
     "dist",
     "README.md"
   ],
+  "homepage": "https://github.com/muratkeremozcan/cy-retryable-before#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muratkeremozcan/cy-retryable-before.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muratkeremozcan/cy-retryable-before/issues"
+  },
+  "keywords": [
+    "cypress",
+    "plugin",
+    "retry",
+    "before"
+  ],
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig-build.json",
     "cy:open-local": "cypress open --e2e --browser chrome --config-file cypress/config/local.config.ts",
