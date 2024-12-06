@@ -64,7 +64,7 @@ npm install cy-retryable-before-1.0.0.tgz
 git tag -a v1.0.0 -m "Release version 1.0.0"
 
 # Push the annotated tag to GitHub
-git push origin v1.0.10
+git push origin v1.0.0
 # Alternatively, push all tags
 git push --tags
 ```
