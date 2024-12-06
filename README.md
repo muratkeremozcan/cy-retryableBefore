@@ -34,4 +34,4 @@ describe('CRUD movie', () => {
 
 ## Demo
 
-See [demo video](https://www.youtube.com/watch?v=g1oSBZ7vQTI).
+See [demo video](https://www.youtube.com/watch?v=363okQDVNMs).
