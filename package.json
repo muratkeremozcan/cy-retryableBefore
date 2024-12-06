@@ -1,6 +1,6 @@
 {
   "name": "cy-retryable-before",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Cypress plugin that allows a `before()`-like hook to rerun before retried tests.",
   "author": "Murat Ozcan",
   "license": "ISC",
